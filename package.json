@@ -1,0 +1,32 @@
+{
+  "name": "tkachenko",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*",
+    "test": "editorconfig-checker",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
+    "copy": "copyfiles -f ./src/*.png ./src/*.ico ./src/site.webmanifest out ./dist/",
+    "build": "rimraf -rf dist && npm run html && npm run styles && npm run copy"
+  },
+  "keywords": [],
+  "author": "Alexey Tkachenko <symblight@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/symblight/tkachenko"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "copyfiles": "^2.4.1",
+    "editorconfig-checker": "^3.3.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-csso": "^5.0.0",
+    "postcss-import": "^14.0.0",
+    "rimraf": "^3.0.2"
+  }
+}

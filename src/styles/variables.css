@@ -1,0 +1,12 @@
+:root {
+    --color-scheme: light dark;
+    --primary-color: #fff;
+    --font-family: 'Inter';
+
+    --color-text: #22222299;
+    --color-text-secondary: #22222299;
+
+    --background-color-default: #fff;
+    --background-color-secondary: #373539;
+    --dark-block: #514f52;
+}
