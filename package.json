@@ -8,7 +8,7 @@
     "test": "editorconfig-checker",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
-    "copy": "copyfiles -f ./src/*.png ./src/*.ico ./src/site.webmanifest out ./dist/ && copyfiles -f ./src/static/img/*.png out ./dist/static/img",
+    "copy": "copyfiles -f ./src/*.png ./src/*.ico ./src/site.webmanifest out ./dist/ &&  mv ./src/static ./dist/static",
     "build": "rimraf -rf dist && npm run html && npm run styles && npm run copy"
   },
   "keywords": [],
