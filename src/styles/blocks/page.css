@@ -18,12 +18,13 @@
 
 .main__section {
     display: grid;
-    height: 100vh;
     place-content: center;
+    text-align: center;
 }
 
 .title__hero {
-    font-size: 54px;
+    font-size: 32px;
+    text-align: center;
 }
 
 .header {
@@ -39,10 +40,7 @@
     justify-content: center;
 }
 
-.header__link:hover {
-    border-radius: 9999px;
-    background-color: #fff;
-    box-shadow: 0 8px 12px 0 rgb(114 129 167 / 6%), 0 1px 4px 0 rgb(114 129 167 / 8%);
+.header__link:hover{
     color: #0083ff;
 }
 
@@ -56,6 +54,17 @@
     width: 100%;
     box-sizing: border-box;
     padding: 2em 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__container {
+    max-width: 480px;
 }
 
 @media (prefers-color-scheme: dark) {

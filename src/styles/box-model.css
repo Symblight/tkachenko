@@ -4,4 +4,19 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+a {
+    color: #292929;
+}
+
+
+h2, h3 {
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 500;
 }

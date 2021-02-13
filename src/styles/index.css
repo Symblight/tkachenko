@@ -3,3 +3,7 @@
 
 /* BLOCKS */
 @import 'blocks/page.css';
+
+/* ELEMENTS */
+@import './elements/index.css';
+
