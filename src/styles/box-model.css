@@ -9,7 +9,7 @@
 
 
 a {
-    color: #292929;
+    color: var(--color-text);
 }
 
 
@@ -19,4 +19,10 @@ h2, h3 {
 
 h1 {
     font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: var(--color-white);
+    }
 }
